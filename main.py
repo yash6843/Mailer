@@ -69,10 +69,10 @@ def login():
 
     label = CTkLabel(master=w,text='Mailer',font=("calibri",40,'bold','italic'),bg_color="transparent")
     label.place(x=350,y=50)
-    # entry1 receipent
+
     recp = CTkEntry(master=w,placeholder_text='Recipient',font=("Arial",20),width=300,height=50,corner_radius=20)
     recp.place(x=270,y=150)
-    # entry2 subject 
+
     subj = CTkEntry(master=w,placeholder_text='Subject',font=("Arial",20),width=300,height=50,corner_radius=20)
     subj.place(x=270,y=220)
 

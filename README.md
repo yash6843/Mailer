@@ -1,18 +1,20 @@
-# Mailer -  GUI app for sending mails 
- Under development!!
+# Mailer - GUI app for sending mails
 
+A simple GUI app made using customtkinter for sending emails
+
+Modules used: - customtkinter for Graphic user interface and it has a modern UI - PIL for some basic image processing - smtplib to send mails with an SMTP or ESMTP listener daemon.
 
 ## Getting Started
-  
-  To run this application, 
 
-  1. Click this [link.](https://github.com/yash6843/Mailer/blob/main/output/main.exe)
+To run this application,
 
-  2. Install the mailer.exe file on your computer.
+1. Click this [link.](https://github.com/yash6843/Mailer/blob/main/output/main.exe)
 
-  3. Windows defender and other anti-virus softwares may prevent your executable from running, But you can disable that in the settings section of your anti-virus software.
+2. Install the mailer.exe file on your computer.
 
-  4. Run the executable, by double clicking it.
+3. Windows defender and other anti-virus softwares may prevent your executable from running, But you can disable that in the settings section of your anti-virus software.
+
+4. Run the executable, by double clicking it.
 
 ## Usage
 

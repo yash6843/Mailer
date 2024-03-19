@@ -2,7 +2,11 @@
 
 A simple GUI app made using customtkinter for sending emails
 
-Modules used: - customtkinter for Graphic user interface and it has a modern UI - PIL for some basic image processing - smtplib to send mails with an SMTP or ESMTP listener daemon.
+Modules used:
+
+- customtkinter for Graphic user interface and it has a modern UI
+- PIL for some basic image processing
+- smtplib to send mails with an SMTP or ESMTP listener daemon.
 
 ## Getting Started
 

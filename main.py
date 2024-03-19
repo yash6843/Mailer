@@ -6,13 +6,13 @@ app = CTk()
 app.title("Mailer - Login")
 app.geometry("800x600")
 set_appearance_mode('dark')
-side_img = Image.open("side.jpg")
+side_img = Image.open("./assets/side.jpg")
 
 CTkLabel(master=app, text="", image=CTkImage(dark_image=side_img,light_image=side_img,size=(400,600))).place(x=400,y=0)
 
-img1= Image.open("email-icon.png")
-img2 = Image.open("pass-icon.png")
-img3 = Image.open("arrow.png")
+img1= Image.open("./assets/email-icon.png")
+img2 = Image.open("./assets/pass-icon.png")
+img3 = Image.open("./assets/arrow.png")
 
 frame = CTkFrame(master=app,height=600,width=400,border_width=2)
 frame.place(x=0,y=0)
@@ -46,17 +46,17 @@ show_pass.place(x=50, y=350)
 def login():
     print(f"Entered credentials: {email.get()} | {key.get()}")
 
-    global ema
-    ema = email.get()
+    global sender_email
+    sender_email = email.get()
 
-    global ke
-    ke = key.get()
+    global login_key
+    login_key = key.get()
 
     try:
         global server
         server = smtplib.SMTP("smtp.gmail.com",587)
         server.starttls()
-        server.login(ema,ke) 
+        server.login(sender_email,login_key) 
     except:
         warning = CTkLabel(master=frame,text='Wrong Credentials',font=("calibri",20),text_color="Red")
         warning.place(x=190,y=260)
@@ -80,13 +80,9 @@ def login():
     body.place(x=270,y=280)
     
     def send_mail():
-       print(f"Entered content: {recp.get()} | {subj.get()} | {body.get('0.0','end')} ")
-
+       recipient = recp.get()
        data = f"Subject: {subj.get()}\n\n{body.get('0.0','end')}"
-       
-
-       server.sendmail(ema,recp.get(),data)
-
+       server.sendmail(sender_email,recipient,data)
 
     btn_send = CTkButton(master=w,text="Send",font=("Arial",20),height=50,width=70,corner_radius=20,command=send_mail)
     btn_send.place(x=350,y=500)

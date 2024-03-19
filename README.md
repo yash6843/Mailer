@@ -20,7 +20,7 @@ To run this application,
 
 4. Run the executable, by double clicking it.
 
-## 📝 sage
+## 📝 Usage
 
 - When you run the application, you first need to have your app - security key or app password.
 

@@ -40,6 +40,10 @@ To run this application,
 - [ ] Better UI
 - [ ] Attachment functionality
 
+## ⁉️ Issues?
+
+If you come across any errors or have suggestions for improvements contact me on ![](https://media.discordapp.net/attachments/1219635979040591972/1219727908654940160/a-removebg-preview.png?ex=660c5b22&is=65f9e622&hm=c98b8322ef58025a0d6e6e4783e29d03364ce2e66ada7707c34be178a5b07ba8&=&format=webp&quality=lossless&width=20&height=20) [Discord](https://discord.gg/4zEhZaKWfV) or please create a new issue [here](https://github.com/yash6843/Mailer/issues) and describe it clearly.
+
 ## 📋 License
 
 This project is licensed under the MIT. See the LICENSE file for details

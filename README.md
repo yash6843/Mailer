@@ -8,7 +8,7 @@ Modules used:
 - PIL for some basic image processing
 - smtplib to send mails with an SMTP or ESMTP listener daemon.
 
-## Getting Started
+## 🚀 Getting Started
 
 To run this application,
 
@@ -20,7 +20,7 @@ To run this application,
 
 4. Run the executable, by double clicking it.
 
-## Usage
+## 📝 sage
 
 - When you run the application, you first need to have your app - security key or app password.
 
@@ -33,3 +33,13 @@ To run this application,
 ![Mailer](https://media.discordapp.net/attachments/1216395074967965737/1219716228222947448/image.png?ex=660c5042&is=65f9db42&hm=8ae8ca83274545f0ae87b841ca3a2e64223e2f65a9a2b57b3ae58395b8415df0&=&format=webp&quality=lossless&width=852&height=670)
 
 ![Mailer](https://media.discordapp.net/attachments/1216395074967965737/1219719599738716261/image.png?ex=660c5365&is=65f9de65&hm=76cb41f08315b9c88ca4a46068c81114620cb2660172c44af13aa8fd7c0218b2&=&format=webp&quality=lossless&width=551&height=437)
+
+## ⌛ To-do list
+
+- [ ] Responsive
+- [ ] Better UI
+- [ ] Attachment functionality
+
+## 📋 License
+
+This project is licensed under the MIT. See the LICENSE file for details

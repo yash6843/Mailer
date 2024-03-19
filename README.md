@@ -1,4 +1,4 @@
-# Mailer - GUI app for sending mails
+# (https://media.discordapp.net/attachments/1219635979040591972/1219636001392300173/9068642.png?ex=660c058a&is=65f9908a&hm=e3c601cd2de326efe9bbaf9242bbfca8e20e6d6200a75df36ca1df01def8b74b&=&format=webp&quality=lossless&width=30&height=30) Mailer - GUI app for sending mails
 
 A simple GUI app made using customtkinter for sending emails
 

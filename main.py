@@ -5,6 +5,7 @@ import smtplib
 app = CTk()
 app.title("Mailer - Login")
 app.geometry("800x600")
+app.iconbitmap("./assets/icon.ico")
 set_appearance_mode('dark')
 side_img = Image.open("./assets/side.jpg")
 
@@ -66,6 +67,7 @@ def login():
     w = CTk()  
     w.geometry("800x600")
     w.title('Mailer')
+    w.iconbitmap("./assets/icon.ico")
 
     label = CTkLabel(master=w,text='Mailer',font=("calibri",40,'bold','italic'),bg_color="transparent")
     label.place(x=350,y=50)
@@ -80,9 +82,15 @@ def login():
     body.place(x=270,y=280)
     
     def send_mail():
-       recipient = recp.get()
-       data = f"Subject: {subj.get()}\n\n{body.get('0.0','end')}"
-       server.sendmail(sender_email,recipient,data)
+        temp = CTkLabel(master=w,text="",font=("calibri",20))
+        temp.place(x=270,y=110)
+        try:
+           recipient = recp.get()
+           data = f"Subject: {subj.get()}\n\n{body.get('0.0','end')}"
+           server.sendmail(sender_email,recipient,data)
+           temp.configure(text="STATUS: Successfully sent!",text_color="Green")
+        except:
+            temp.configure(text="STATUS: Error occured!",text_color="Red")
 
     btn_send = CTkButton(master=w,text="Send",font=("Arial",20),height=50,width=70,corner_radius=20,command=send_mail)
     btn_send.place(x=350,y=500)

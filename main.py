@@ -45,8 +45,7 @@ show_pass.place(x=50, y=350)
 
 # Login function, connecting to server and then creating a new window for sending mail
 def login():
-    print(f"Entered credentials: {email.get()} | {key.get()}")
-
+    
     global sender_email
     sender_email = email.get()
 

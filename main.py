@@ -1,19 +1,29 @@
 from customtkinter import *
 from PIL import Image
 import smtplib
+import os, sys
+
+def resource_path(relative_path): # A FUNCTION TO COUNTER THE ERRORS FOR ADDITIONAL FILES WHEN ADDED IN PYINSTALLER
+    # (https://youtu.be/xJAM8_Lx5mY?t=906) Thanks to this video!!
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    
+    return os.path.join(base_path,relative_path)
 
 app = CTk()
 app.title("Mailer - Login")
 app.geometry("800x600")
-app.iconbitmap("./assets/icon.ico")
+app.iconbitmap(resource_path("./assets/icon.ico"))
 set_appearance_mode('dark')
-side_img = Image.open("./assets/side.jpg")
+side_img = Image.open(resource_path("./assets/side.jpg"))
 
 CTkLabel(master=app, text="", image=CTkImage(dark_image=side_img,light_image=side_img,size=(400,600))).place(x=400,y=0)
 
-img1= Image.open("./assets/email-icon.png")
-img2 = Image.open("./assets/pass-icon.png")
-img3 = Image.open("./assets/arrow.png")
+img1= Image.open(resource_path("./assets/email-icon.png"))
+img2 = Image.open(resource_path("./assets/pass-icon.png"))
+img3 = Image.open(resource_path("./assets/arrow.png"))
 
 frame = CTkFrame(master=app,height=600,width=400,border_width=2)
 frame.place(x=0,y=0)
@@ -66,7 +76,7 @@ def login():
     w = CTk()  
     w.geometry("800x600")
     w.title('Mailer')
-    w.iconbitmap("./assets/icon.ico")
+    w.iconbitmap(resource_path("./assets/icon.ico"))
 
     label = CTkLabel(master=w,text='Mailer',font=("calibri",40,'bold','italic'),bg_color="transparent")
     label.place(x=350,y=50)

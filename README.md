@@ -47,4 +47,4 @@ If you come across any errors or have suggestions for improvements contact me on
 
 ## 📋 License
 
-This project is licensed under the MIT. See the LICENSE file for details
+This project is licensed under the MIT. See the [LICENSE](https://github.com/yash6843/Mailer/blob/main/license.md) file for details

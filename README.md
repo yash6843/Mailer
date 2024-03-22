@@ -38,8 +38,9 @@ To run this application,
 
 - [ ] Responsive
 - [ ] Better UI
-- [ ] Attachment functionality
-- [ ] To send an email to multiple recipients, BCC (Blind Carbon Copy)
+- [x] Attachment functionality
+- [ ] Remove attachments
+- [x] To send an email to multiple recipients, BCC (Blind Carbon Copy)
 
 ## ⁉️ Issues?
 

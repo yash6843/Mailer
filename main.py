@@ -129,7 +129,7 @@ def login():
             
                 for filename in  files:
                     name = (filename.split("/"))[-1]
-                    attachment= open(filename, 'rb')  # r for read and b for binary
+                    attachment= open(resource_path(filename), 'rb')  # r for read and b for binary
                     attachment_package = MIMEBase('application', 'octet-stream')
                     attachment_package.set_payload((attachment).read())
                     encoders.encode_base64(attachment_package)
@@ -140,7 +140,7 @@ def login():
             server.sendmail(sender_email, recp_email, text)
             print(f"Mail sent to {recp_email}")
             temp.configure(text="STATUS: Successfully sent!",text_color="Green")
-            
+
         except:
             temp.configure(text="STATUS: Error occured!",text_color="Red")
 

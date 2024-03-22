@@ -13,7 +13,7 @@ Modules used:
 
 To run this application,
 
-1. Click this [link.](https://github.com/yash6843/Mailer/blob/main/output/main.exe)
+1. Click this [link.](https://github.com/yash6843/Mailer/tree/main/output)
 
 2. Install the mailer.exe file on your computer.
 

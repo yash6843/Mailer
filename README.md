@@ -7,6 +7,7 @@ Modules used:
 - customtkinter for Graphic user interface and it has a modern UI
 - PIL for some basic image processing
 - smtplib to send mails with an SMTP or ESMTP listener daemon.
+- email.mime that allows users to send different types of data files, including audio, video, images, and application programs, over email, also supports sending both ASCII text and non-ASCII data via email.
 
 ## 🚀 Getting Started
 
